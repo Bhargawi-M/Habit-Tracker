@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-box">
+            <div class="header-img"><i class="fa-solid fa-clover"></i></div>
+            <div class="header-title"> Habit Tracker</div>
+        </div>
+        <div class="dark-mode">
+            <button class="dark-btn">
+                <i class="fa-solid fa-sun" style="color: rgb(255, 187, 28);"></i> &ensp; <i class="fa-regular fa-moon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="left">
+            <div class="page-motivation">
+                <h1>Build better habits, one day at a time <span aria-hidden="true">🌱</span></h1>
+                <p>Small steps. Big changes.</p>
+            </div>
+            <div class="search-head">
+                <div class="add-box">
+                    <form>
+                        <input class="add-habit-box" placeholder="Add New Habit" required maxlength="40" aria-label="New habit name">
+                    </form>
+                </div>
+                <div class="add-btn">
+                    <button class="add-habit-btn" type="button">Add Habit</button>
+                </div>
+            </div>
+            <div class="habit-list">
+                <div class="habit-head">
+                    <div style="padding-bottom: 0.5rem; font-weight: 600;">My Habits</div>
+                </div>
+                <div class="card">
+                    <div class="habit">
+                        <div class="habit-img">
+                            <div class="img-bg book"><i class="fa-solid fa-book"></i></div>
+                        </div>
+                        <div class="habit-info">
+                            <div class="habit-info-top">
+                                <div class="name-streak">
+                                    <div class="name">Reading</div>
+                                    <div class="streak"><i class="fa-solid fa-fire"></i> 5 day streak</div>
+                                </div>
+                                <div class="days">
+                                    <div class="day mon">
+                                        <div class="day-name">Mon</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day tue">
+                                        <div class="day-name">Tue</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day wed">
+                                        <div class="day-name">Wed</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day thu">
+                                        <div class="day-name">Thu</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day fri">
+                                        <div class="day-name">Fri</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day sat">
+                                        <div class="day-name">Sat</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sun">
+                                        <div class="day-name">Sun</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="habit-info-bottom">
+                                <div class="progress-stat">Progress: 5/7</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-percent">71%</div>
+                            </div>
+                        </div>
+                        <div class="comp-btn">
+                            <i class="fa-solid fa-check"></i> Completed
+                        </div>    
+                        <div class="del-btn">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="habit">
+                        <div class="habit-img">
+                            <div class="img-bg dumbell"><i class="fa-solid fa-dumbbell"></i></div>
+                        </div>
+                        <div class="habit-info">
+                            <div class="habit-info-top">
+                                <div class="name-streak">
+                                    <div class="name">Exercise</div>
+                                    <div class="streak"><i class="fa-solid fa-fire"></i> 0 day streak</div>
+                                </div>
+                                <div class="days">
+                                    <div class="day mon">
+                                        <div class="day-name">Mon</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day tue">
+                                        <div class="day-name">Tue</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day wed">
+                                        <div class="day-name">Wed</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day thu">
+                                        <div class="day-name">Thu</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day fri">
+                                        <div class="day-name">Fri</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sat">
+                                        <div class="day-name">Sat</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sun">
+                                        <div class="day-name">Sun</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="habit-info-bottom">
+                                <div class="progress-stat">Progress: 0/7</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-percent">0%</div>
+                            </div>
+                        </div>
+                        <div class="comp-btn-blank">
+                        Mark Complete
+                        </div>    
+                        <div class="del-btn">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="habit">
+                        <div class="habit-img">
+                            <div class="img-bg laptop"><i class="fa-solid fa-laptop"></i></div>
+                        </div>
+                        <div class="habit-info">
+                            <div class="habit-info-top">
+                                <div class="name-streak">
+                                    <div class="name">Coding</div>
+                                    <div class="streak"><i class="fa-solid fa-fire"></i> 3 day streak</div>
+                                </div>
+                                <div class="days">
+                                    <div class="day mon">
+                                        <div class="day-name">Mon</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day tue">
+                                        <div class="day-name">Tue</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day wed">
+                                        <div class="day-name">Wed</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day thu">
+                                        <div class="day-name">Thu</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day fri">
+                                        <div class="day-name">Fri</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sat">
+                                        <div class="day-name">Sat</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sun">
+                                        <div class="day-name">Sun</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="habit-info-bottom">
+                                <div class="progress-stat">Progress: 3/7</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-percent">43%</div>
+                            </div>
+                        </div>
+                        <div class="comp-btn">
+                            <i class="fa-solid fa-check"></i> Completed
+                        </div>    
+                        <div class="del-btn">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="habit">
+                        <div class="habit-img">
+                            <div class="img-bg droplet"><i class="fa-solid fa-droplet"></i></div>
+                        </div>
+                        <div class="habit-info">
+                            <div class="habit-info-top">
+                                <div class="name-streak">
+                                    <div class="name">Drink Water</div>
+                                    <div class="streak"><i class="fa-solid fa-fire"></i> 1 day streak</div>
+                                </div>
+                                <div class="days">
+                                    <div class="day mon">
+                                        <div class="day-name">Mon</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day tue">
+                                        <div class="day-name">Tue</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day wed">
+                                        <div class="day-name">Wed</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day thu">
+                                        <div class="day-name">Thu</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day fri">
+                                        <div class="day-name">Fri</div>
+                                        <div class="comp"><i class="fa-solid fa-circle-check"></i></div>
+                                    </div>
+                                    <div class="day sat">
+                                        <div class="day-name">Sat</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                    <div class="day sun">
+                                        <div class="day-name">Sun</div>
+                                        <div class="comp"><i class="fa-regular fa-circle"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="habit-info-bottom">
+                                <div class="progress-stat">Progress: 4/7</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-percent">57%</div>
+                            </div>
+                        </div>
+                        <div class="comp-btn">
+                            <i class="fa-solid fa-check"></i> Completed
+                        </div>    
+                        <div class="del-btn">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <template id="habitCardTemplate">
+                <div class="card">
+                    <div class="habit">
+                        <div class="habit-img">
+                            <div class="img-bg new-habit-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="habit-info">
+                            <div class="habit-info-top">
+                                <div class="name-streak">
+                                    <div class="name"></div>
+                                    <div class="streak"><i class="fa-solid fa-fire" aria-hidden="true"></i> 0 day streak</div>
+                                </div>
+                                <div class="days">
+                                    <div class="day"><div class="day-name">Mon</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Tue</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Wed</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Thu</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Fri</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Sat</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                    <div class="day"><div class="day-name">Sun</div><div class="comp"><i class="fa-regular fa-circle"></i></div></div>
+                                </div>
+                            </div>
+                            <div class="habit-info-bottom">
+                                <div class="progress-stat">Progress: 0/7</div>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                                <div class="progress-percent">0%</div>
+                            </div>
+                        </div>
+                        <button class="comp-btn-blank" type="button">Mark Complete</button>
+                        <button class="del-btn" type="button" aria-label="Delete habit">
+                            <i class="fa-regular fa-trash-can" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <div class="right">
+            <div class="card">
+            <div style="font-weight: 600; font-size: 16px;">Today's Progress</div>
+            <div class="prog">
+                <div class="chart-container">
+                <svg viewBox="0 0 100 100" class="circular-chart">
+                    <circle class="circle-bg" cx="50" cy="50" r="40" />
+                    <circle class="circle-progress" id="progressCircle" cx="50" cy="50" r="40" />
+                </svg>
+                <div class="percentage" id="percentText">75%</div>
+            </div>
+
+            <div class="details">
+                <h3 id="statusText">3 of 4 habits</h3>
+                <p class="subtext">completed</p>
+                <p class="motivation"><i class="fa-solid fa-seedling" style="color: #48bb78;"></i> You're doing great!</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <div style="font-weight: 600; font-size: 16px;">Quick Stats</div>
+            <div class="stats">
+                <table aria-label="Quick habit statistics">
+                    <tbody>
+                        <tr>
+                            <td class="stats-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></td>
+                            <th scope="row">Total Habits</th>
+                            <td class="stats-value">4</td>
+                        </tr>
+                        <tr>
+                            <td class="stats-icon streak-icon"><i class="fa-solid fa-fire" aria-hidden="true"></i></td>
+                            <th scope="row">Current Streak</th>
+                            <td class="stats-value">5 days</td>
+                        </tr>
+                        <tr>
+                            <td class="stats-icon longest-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></td>
+                            <th scope="row">Longest Streak</th>
+                            <td class="stats-value">5 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="card quote-card">
+            <i class="fa-solid fa-seedling quote-icon" aria-hidden="true"></i>
+            <blockquote>“Discipline is choosing between what you want now and what you want most.”</blockquote>
+            <div class="quote-author">— Unknown</div>
+        </div>
+
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
