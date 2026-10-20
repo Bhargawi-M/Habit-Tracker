@@ -126,17 +126,6 @@ function restoreHabits() {
   habitList.append(...restoredCards);
 }
 
-function setProgress(completed, total) {
-  const radius = 40;
-  const circumference = 2 * Math.PI * radius;
-  const percentage = total === 0 ? 0 : Math.round((completed / total) * 100);
-  const offset = circumference - (percentage / 100) * circumference;
-
-  document.getElementById('progressCircle').style.strokeDashoffset = offset;
-  document.getElementById('percentText').textContent = `${percentage}%`;
-  document.getElementById('statusText').textContent = `${completed} of ${total} habits`;
-}
-
 function updateDashboardStats() {
   const cards = habitList.querySelectorAll(':scope > .card');
   const completed = habitList.querySelectorAll(':scope > .card .comp-btn').length;
