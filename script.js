@@ -46,21 +46,6 @@ function loadHabits() {
     console.error('Could not read saved habits from local storage.', error);
     return null;
   }
-
-  const isValid = Array.isArray(savedHabits) && savedHabits.every((habit) =>
-    habit &&
-    typeof habit.name === 'string' &&
-    Array.isArray(habit.completedDays) &&
-    habit.completedDays.length === 7 &&
-    habit.completedDays.every((day) => typeof day === 'boolean') &&
-    typeof habit.completedToday === 'boolean'
-  );
-
-  if (!isValid) {
-    console.error('Saved habits have an invalid format. Showing the default habits instead.');
-    return null;
-  }
-
   return savedHabits;
 }
 
