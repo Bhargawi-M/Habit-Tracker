@@ -268,61 +268,6 @@ button.comp-btn-blank{
 button.del-btn{
     border: none;
 }
-.prog{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.chart-container{
-    position: relative;
-    width: 110px;
-    height: 110px;
-}
-.circular-chart{
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-}
-.circle-bg{
-    fill: none;
-    stroke: #e5e7eb;
-    stroke-width: 8;
-}
-.circle-progress{
-    fill: none;
-    stroke:#48bb78;
-    stroke-width: 8;
-    stroke-linecap: round;
-    stroke-dasharray: 251.2;
-    stroke-dashoffset: 251.2;
-    transition: stroke-dashoffset 0.8s ease-in-out;
-}
-.percentage{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1f2937;
-}
-.details h3{
-    margin: 0;
-    font-size: 1.1rem;
-    color: #374151;
-}
-.subtext{
-    margin: 2px 0 8px 0;
-    color: #6b7280;
-    font-size: 0.9rem;
-}
-.motivation{
-    margin: 0;
-    font-size: 0.85rem;
-    color: #9ca3af;
-}
 .stats{
     margin-top: 0.5rem;
 }
