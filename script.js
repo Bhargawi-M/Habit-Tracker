@@ -130,8 +130,8 @@ addHabitForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const name = habitInput.value.trim();
-  habitInput.setCustomValidity(name ? '' : 'Enter a habit name.');
-  if (!habitInput.reportValidity()) {
+  if (name==='') {
+    alert('please enter a habit name');
     return;
   }
 
@@ -145,7 +145,6 @@ addHabitForm.addEventListener('submit', (event) => {
   habitInput.focus();
 });
 
-habitInput.addEventListener('input', () => habitInput.setCustomValidity(''));
 addHabitButton.addEventListener('click', () => addHabitForm.requestSubmit());
 
 habitList.addEventListener('click', (event) => {
